@@ -2,8 +2,8 @@
 
 ssh ubuntu@52.74.250.106 <<EOF
   cd /var/www/Jenkins-CD
-  git pull origin master
-  npm install --production
+  sudo git pull origin master
+  sudo npm install --production
   sudo forever restartall
   exit
 EOF
